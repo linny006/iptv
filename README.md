@@ -94,11 +94,11 @@ Mac/Linux 一键获取最优 IP 可以用脚本 [cloudflare-fping](https://githu
 - 开启 workers 监控
   - 可以在超过请求数( 默认 100000 )时自动上传 worker 到其他账号并移动域名 CNAME 记录
   - 准备工作
-    - 所有账号必须是邮箱验证完成的
-    - 在 partner 面板添加源站 CNAME 记录, 所有源站必须在同一 cloudflare 账号
-    - 一个 CNAME 对应一个 worker, 否则会出错
-    - 如果没有添加 Token (workers 和 zone 编辑权限) 脚本会尝试添加
-    - 可以设置中转 IBM CF
+    - 脚本添加用户
+    - [ 可省略 ] 需要 Token (API 令牌): workers 和 zone 编辑权限 或 使用 Global API Key (官网添加或查看)
+    - 脚本添加源站 CNAME 记录(一个 CNAME 对应一个 worker), 所有域名必须在同一 cloudflare 账号
+    - 如果是新账号需要登录官网完成验证邮箱并点击 workers 设置站点域名
+  - 可以设置中转 IBM CF
 
 ---
 
